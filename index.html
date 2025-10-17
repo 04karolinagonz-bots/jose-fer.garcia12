@@ -1,0 +1,103 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal - Jose Fernando Garcia Martinez</title>
+    <link rel="stylesheet"  type="text/css"    href="style.css?v=1">
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Sección de presentación -->
+    <section id="inicio" class="fade-in cuadro">
+        <div class="presentacion">
+            <h1>Mi nombre es Jose Fernando Garcia Martinez</h1>
+            <p>Bienvenidos a mi página personal. Aquí les mostraré un poco sobre mí, mis actividades, mi familia, mis amigos , mi escuela y mi grupo del CBTis 224.</p>
+            <img src="img/yoyminovia.jpg" alt="Jose Garcia" class="foto-principal">
+        </div>
+    </section>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+          
+
+        <section id="pareja" class="fade-in cuadro">
+        <h2>Mi Pareja</h2>
+        <img src="img/yoyminovia.jpg" alt="Mi Pareja" class="foto-principal2">
+        <p>Ella es una persona muy especial para mí, alguien con quien comparto momentos increíbles y que me hace muy feliz.</p>
+        <div class="pareja">
+            <div class="miembro">
+                <p>Victoria y Yo Mi novia </p>
+            </div>
+        </div>
+    </section>
+             <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Sección Actividades -->
+    <section id="actividades" class="fade-in cuadro">
+        <h2>Mis Actividades Extraescolares</h2>
+        <p>Me gusta andar de vago y salir a fiestas como también pasar tiempo solo, con familia o mi novia .</p>
+        <div class="familia">
+        <div class="miembro"><img src="img/act1.jpg" alt="Actividad 1"></div>
+        <div class="miembro"><img src="img/act2.jpg" alt="Actividad 2"></div>
+        <div class="miembro"><img src="img/act3.jpg" alt="Actividad 3"></div>
+        <div class="miembro"><img src="img/act4.jpg" alt="Actividad 4"></div>
+        <div class="miembro"><img src="img/act5.jpg" alt="Actividad 5"></div>
+        </div>
+    </section>
+                
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Sección Familia -->
+    <section id="familia" class="fade-in cuadro">
+        <h2>Mi Familia</h2>
+        <div class="familia">
+            <div class="miembro"><img src="img/papa.jpg" alt="Papá"><p>José Gregorio</p></div>
+            <div class="miembro"><img src="img/mama.jpg" alt="Mamá"><p>Minerva</p></div>
+            <div class="miembro"><img src="img/hermitzel.jpg" alt="Hermana 1"><p>Itzel</p></div>
+            <div class="miembro"><img src="img/hermamerica.jpg" alt="Hermana 2">America<p></p></div>
+            <div class="miembro"><img src="img/bobi.jpg" alt="Perrita">Bobi<p></p></div>
+        </div>
+    </section>
+              <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Sección Amigos -->
+    <section id="amigos" class="fade-in cuadro">
+        <h2>Mis Amigos</h2>
+        <div class="amigos">
+            <div class="miembro"><img src="img/porki.jpg" alt="Amigo 1"><p>Porki</p></div>
+            <div class="miembro"><img src="img/Uriel.jpg" alt="Amigo 2">Uriel</p></div>
+            <div class="miembro"><img src="img/beto.jpg" alt="Amigo 2">Betol</p></div>
+        </div>
+    </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>               
+
+    <!-- Sección Plantel -->
+    <section id="plantel" class="fade-in cuadro">
+        <h2>Donde Estudió</h2>
+        <p>Estudió en el CBTis 224, un plantel completo que fomenta la educación y actividades culturales.</p>
+        <img src="img/cbtis224.jpg" alt="CBTis 224">
+    </section>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Sección Grupo -->
+     <section id="grupo" class="fade-in cuadro">
+        <h2>Mi Grupo</h2>
+        <p>Pertenezco al grupo <strong>5°H</strong> del CBTis 224. Somos un grupo unido cuando nos conviene.</p>
+        <img src="img/grupo.jpeg" alt="Grupo 5H">
+    </section>
+          <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        // Animación suave al hacer scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
